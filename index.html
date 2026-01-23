@@ -1,52 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Randika Nawarathne - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Prism.js for code highlighting -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/toolbar/prism-toolbar.min.css">
-</head>
+    <!-- Add these to your <head> section -->
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<!-- Prism.js for code highlighting -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/toolbar/prism-toolbar.min.css">
 <body>
     <!-- Navigation -->
-    <nav id="navbar">
-        <div class="container">
-            <a href="#home" class="logo">Randika Nawarathne</a>
-            <div class="menu-toggle">
-                <i class="fas fa-bars"></i>
-            </div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#code">Code</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
+    <!-- NAVIGATION -->
+<nav id="navbar">
+    <div class="nav-container">
+        <a href="#home" class="logo">
+            <span>RN</span>
+        </a>
+        <button class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-links">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#code">Code</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
 
     <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1>Hi, I'm <span class="highlight">Randika Nawarathne</span></h1>
-                <h2>IT Student | Aspiring Cybersecurity & AI Specialist | Multimedia Designer</h2>
-                <p>Specializing in Python, PHP, and modern web technologies</p>
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn">View Projects</a>
-                    <a href="#contact" class="btn secondary">Contact Me</a>
+    <!-- HERO SECTION -->
+<section id="home" class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <span class="hero-subtitle">
+                <i class="fas fa-code"></i> Full Stack Developer
+            </span>
+            <h1>Randika <span class="text-gradient">Nawanathne</span></h1>
+            <p class="hero-description">
+                Crafting elegant solutions with cutting-edge technology. 
+                Specializing in Python, PHP, and modern web development.
+            </p>
+            <div class="hero-cta">
+                <a href="#projects" class="btn btn-primary">
+                    <i class="fas fa-rocket"></i> View Projects
+                </a>
+                <a href="#contact" class="btn btn-secondary">
+                    <i class="fas fa-paper-plane"></i> Get in Touch
+                </a>
+                <a href="#code" class="btn btn-outline">
+                    <i class="fas fa-terminal"></i> View Code
+                </a>
+            </div>
+            <div class="hero-tech-stack">
+                <span class="tech-stack-label">Tech Stack:</span>
+                <div class="tech-icons">
+                    <div class="tech-icon">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <div class="tech-icon">
+                        <i class="fab fa-php"></i>
+                    </div>
+                    <div class="tech-icon">
+                        <i class="fab fa-js"></i>
+                    </div>
+                    <div class="tech-icon">
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <div class="tech-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
                 </div>
             </div>
-            <div class="hero-image">
-                <!-- Add your image here later -->
-              <img src="assets/profile.jpg.png" alt="Randika Nawanathne" class="profile-photo">
-            </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- About Section -->
     <section id="about" class="about">
