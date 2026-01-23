@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Randika Nawanathne - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Prism.js for code highlighting -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/toolbar/prism-toolbar.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="container">
+            <a href="#home" class="logo">RandikaN</a>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#code">Code</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Hi, I'm <span class="highlight">Randika Nawanathne</span></h1>
+                <h2>Full Stack Developer</h2>
+                <p>Specializing in Python, PHP, and modern web technologies</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn">View Projects</a>
+                    <a href="#contact" class="btn secondary">Contact Me</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <!-- Add your image here later -->
+                <div class="image-placeholder">
+                    <i class="fas fa-user-circle"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Developer & Problem Solver</h3>
+                    <p>I'm a passionate developer with expertise in multiple programming languages and frameworks. I enjoy building efficient, scalable web applications and solving complex problems.</p>
+                    <div class="about-details">
+                        <div class="detail-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div>
+                                <h4>Education</h4>
+                                <p>Computer Science / Software Engineering</p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Sri Lanka</p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>randika@example.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-stats">
+                    <div class="stat">
+                        <h3>2+</h3>
+                        <p>Years Experience</p>
+                    </div>
+                    <div class="stat">
+                        <h3>10+</h3>
+                        <p>Projects Completed</p>
+                    </div>
+                    <div class="stat">
+                        <h3>5+</h3>
+                        <p>Technologies</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class="fab fa-python"></i> Python</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">Flask</span>
+                        <span class="skill-tag">Django</span>
+                        <span class="skill-tag">Pandas</span>
+                        <span class="skill-tag">NumPy</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fab fa-php"></i> PHP</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">Laravel</span>
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">API Development</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fab fa-js"></i> JavaScript</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Vue.js</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-database"></i> Databases</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">MongoDB</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="projects-grid" id="projects-container">
+                <!-- Projects loaded by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Code Showcase Section -->
+    <section id="code" class="code-showcase">
+        <div class="container">
+            <h2 class="section-title">Code Examples</h2>
+            <div class="code-tabs">
+                <button class="code-tab active" data-language="python">Python</button>
+                <button class="code-tab" data-language="php">PHP</button>
+                <button class="code-tab" data-language="javascript">JavaScript</button>
+            </div>
+            
+            <div class="code-examples">
+                <!-- Python Example -->
+                <div class="code-example active" data-language="python">
+                    <div class="code-header">
+                        <h3><i class="fab fa-python"></i> Python API Server</h3>
+                    </div>
+                    <pre class="code-block"><code class="language-python">
+from flask import Flask, jsonify, request
+from flask_cors import CORS
+import json
+
+app = Flask(__name__)
+CORS(app)
+
+# Sample data
+users = [
+    {"id": 1, "name": "John Doe", "email": "john@example.com"},
+    {"id": 2, "name": "Jane Smith", "email": "jane@example.com"}
+]
+
+@app.route('/')
+def home():
+    return jsonify({"message": "Welcome to Python API"})
+
+@app.route('/users', methods=['GET'])
+def get_users():
+    return jsonify(users)
+
+@app.route('/users/<int:user_id>', methods=['GET'])
+def get_user(user_id):
+    user = next((u for u in users if u['id'] == user_id), None)
+    if user:
+        return jsonify(user)
+    return jsonify({"error": "User not found"}), 404
+
+@app.route('/users', methods=['POST'])
+def add_user():
+    new_user = request.get_json()
+    new_user['id'] = len(users) + 1
+    users.append(new_user)
+    return jsonify(new_user), 201
+
+if __name__ == '__main__':
+    app.run(debug=True, port=5000)
+                    </code></pre>
+                </div>
+
+                <!-- PHP Example -->
+                <div class="code-example" data-language="php">
+                    <div class="code-header">
+                        <h3><i class="fab fa-php"></i> PHP CRUD Operations</h3>
+                    </div>
+                    <pre class="code-block"><code class="language-php">
+<?php
+// Database connection
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "portfolio_db";
+
+try {
+    $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    
+    // Create table if not exists
+    $sql = "CREATE TABLE IF NOT EXISTS projects (
+        id INT AUTO_INCREMENT PRIMARY KEY,
+        title VARCHAR(255) NOT NULL,
+        description TEXT,
+        technologies VARCHAR(255),
+        created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    )";
+    
+    $conn->exec($sql);
+    
+} catch(PDOException $e) {
+    echo "Connection failed: " . $e->getMessage();
+}
+
+// Insert project
+function addProject($title, $description, $technologies) {
+    global $conn;
+    $sql = "INSERT INTO projects (title, description, technologies) 
+            VALUES (:title, :description, :technologies)";
+    $stmt = $conn->prepare($sql);
+    return $stmt->execute([
+        ':title' => $title,
+        ':description' => $description,
+        ':technologies' => $technologies
+    ]);
+}
+
+// Get all projects
+function getProjects() {
+    global $conn;
+    $stmt = $conn->query("SELECT * FROM projects ORDER BY created_at DESC");
+    return $stmt->fetchAll(PDO::FETCH_ASSOC);
+}
+
+// Update project
+function updateProject($id, $title, $description, $technologies) {
+    global $conn;
+    $sql = "UPDATE projects SET 
+            title = :title,
+            description = :description,
+            technologies = :technologies
+            WHERE id = :id";
+    $stmt = $conn->prepare($sql);
+    return $stmt->execute([
+        ':id' => $id,
+        ':title' => $title,
+        ':description' => $description,
+        ':technologies' => $technologies
+    ]);
+}
+
+// Delete project
+function deleteProject($id) {
+    global $conn;
+    $sql = "DELETE FROM projects WHERE id = :id";
+    $stmt = $conn->prepare($sql);
+    return $stmt->execute([':id' => $id]);
+}
+?>
+                    </code></pre>
+                </div>
+
+                <!-- JavaScript Example -->
+                <div class="code-example" data-language="javascript">
+                    <div class="code-header">
+                        <h3><i class="fab fa-js"></i> JavaScript Weather App</h3>
+                    </div>
+                    <pre class="code-block"><code class="language-javascript">
+class WeatherApp {
+    constructor(apiKey) {
+        this.apiKey = apiKey;
+        this.baseUrl = 'https://api.openweathermap.org/data/2.5/weather';
+        this.init();
+    }
+
+    init() {
+        this.bindEvents();
+        this.loadWeather('Colombo');
+    }
+
+    bindEvents() {
+        document.getElementById('search-btn').addEventListener('click', () => {
+            const city = document.getElementById('city-input').value;
+            if (city) {
+                this.loadWeather(city);
+            }
+        });
+
+        document.getElementById('city-input').addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+                const city = e.target.value;
+                if (city) {
+                    this.loadWeather(city);
+                }
+            }
+        });
+    }
+
+    async loadWeather(city) {
+        try {
+            const url = `${this.baseUrl}?q=${city}&appid=${this.apiKey}&units=metric`;
+            const response = await fetch(url);
+            const data = await response.json();
+
+            if (data.cod === 200) {
+                this.displayWeather(data);
+            } else {
+                this.showError('City not found');
+            }
+        } catch (error) {
+            this.showError('Failed to fetch weather data');
+        }
+    }
+
+    displayWeather(data) {
+        const weatherInfo = document.getElementById('weather-info');
+        weatherInfo.innerHTML = `
+            <div class="weather-card">
+                <h2>${data.name}, ${data.sys.country}</h2>
+                <div class="weather-main">
+                    <img src="https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png" 
+                         alt="${data.weather[0].description}">
+                    <div class="temp">${Math.round(data.main.temp)}°C</div>
+                </div>
+                <p class="description">${data.weather[0].description}</p>
+                <div class="weather-details">
+                    <div class="detail">
+                        <span>Humidity</span>
+                        <strong>${data.main.humidity}%</strong>
+                    </div>
+                    <div class="detail">
+                        <span>Wind</span>
+                        <strong>${data.wind.speed} m/s</strong>
+                    </div>
+                    <div class="detail">
+                        <span>Pressure</span>
+                        <strong>${data.main.pressure} hPa</strong>
+                    </div>
+                </div>
+            </div>
+        `;
+    }
+
+    showError(message) {
+        const weatherInfo = document.getElementById('weather-info');
+        weatherInfo.innerHTML = `
+            <div class="error-message">
+                <i class="fas fa-exclamation-circle"></i>
+                <p>${message}</p>
+            </div>
+        `;
+    }
+}
+
+// Initialize app
+document.addEventListener('DOMContentLoaded', () => {
+    const weatherApp = new WeatherApp('YOUR_API_KEY_HERE');
+});
+                    </code></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Connect!</h3>
+                    <p>Feel free to reach out for collaborations or just to say hello!</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>randika@example.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+94 77 123 4567</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Sri Lanka</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="https://linkedin.com/in/randikanawarathne" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/randikanwarathne" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" target="_blank">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="#home" class="logo">RandikaN</a>
+                    <p>Full Stack Developer & Problem Solver</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Stay Updated</h4>
+                    <p>Subscribe to my newsletter for updates</p>
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="Enter your email">
+                        <button type="submit">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> Randika Nawanathne. All rights reserved.</p>
+                <p>Designed with ❤️ using HTML, CSS & JavaScript</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-php.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-javascript.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

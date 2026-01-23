@@ -1,0 +1,58 @@
+{
+    "projects": [
+        {
+            "id": 1,
+            "title": "Portfolio Website",
+            "description": "Responsive portfolio website built with HTML, CSS, and JavaScript. Features dynamic content loading and smooth animations.",
+            "technologies": ["HTML5", "CSS3", "JavaScript", "Git"],
+            "github": "https://github.com/randikanwarathne/randikanwarathne.github.io",
+            "live": "https://randikanwarathne.github.io",
+            "image": "project1"
+        },
+        {
+            "id": 2,
+            "title": "E-commerce Platform",
+            "description": "Full-featured online store with shopping cart and payment integration using PHP and MySQL.",
+            "technologies": ["PHP", "MySQL", "JavaScript", "Bootstrap"],
+            "github": "https://github.com/randikanwarathne/ecommerce-platform",
+            "live": "#",
+            "image": "project2"
+        },
+        {
+            "id": 3,
+            "title": "Weather Dashboard",
+            "description": "Real-time weather application using OpenWeather API with interactive charts and location detection.",
+            "technologies": ["JavaScript", "API", "Chart.js", "CSS3"],
+            "github": "https://github.com/randikanwarathne/weather-dashboard",
+            "live": "#",
+            "image": "project3"
+        },
+        {
+            "id": 4,
+            "title": "Task Manager App",
+            "description": "Productivity application with drag & drop functionality, local storage, and priority management.",
+            "technologies": ["JavaScript", "LocalStorage", "CSS Grid", "Drag API"],
+            "github": "https://github.com/randikanwarathne/task-manager",
+            "live": "#",
+            "image": "project4"
+        },
+        {
+            "id": 5,
+            "title": "Python Data Analyzer",
+            "description": "Data analysis tool for processing CSV files with visualization using Pandas and Matplotlib.",
+            "technologies": ["Python", "Pandas", "Matplotlib", "NumPy"],
+            "github": "https://github.com/randikanwarathne/data-analyzer",
+            "live": "#",
+            "image": "project5"
+        },
+        {
+            "id": 6,
+            "title": "PHP Blog System",
+            "description": "Content management system with user authentication, comments, and admin panel.",
+            "technologies": ["PHP", "MySQL", "PDO", "Bootstrap"],
+            "github": "https://github.com/randikanwarathne/blog-system",
+            "live": "#",
+            "image": "project6"
+        }
+    ]
+}
