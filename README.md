@@ -48,7 +48,7 @@ Email: randika@example.com
 
 LinkedIn: https://linkedin.com/in/randikanawarathne
 
-GitHub: https://github.com/randikanwarathne
+GitHub: https://github.com/randikanawarathne
 
 📄 License
 This project is open source and available under the MIT License.
