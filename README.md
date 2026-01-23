@@ -1,4 +1,4 @@
-# Randika Nawanathne - Portfolio
+# Randika Nawarathne - Portfolio
 
 🌐 **Live Website:** https://randikanwarathne.github.io
 
