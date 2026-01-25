@@ -1,6 +1,6 @@
 # Randika Nawarathne - Portfolio
 
-🌐 **Live Website:** https://randikanwarathne.github.io
+🌐 **Live Website:** https://randikanawarathne.github.io
 
 ## 🚀 About This Project
 
