@@ -73,6 +73,14 @@ document.addEventListener('DOMContentLoaded', function() {
                     technologies: ["PHP", "MySQL", "JavaScript", "Bootstrap"],
                     github: "#",
                     live: "#"
+                },
+                 {
+                    id: 3,
+                    title: "AI-Driven Cyber Threat Detection System",
+                    description: "Developed a production-ready threat detection system using machine learning algorithms to analyze network logs in real-time. The system achieves 97.8% detection accuracy, integrates with MITRE ATT&CK framework, and generates automated severity reports..",
+                    technologies: ["Python", "Scikit-learn", "Pandas", "Docker", "MITRE ATT&CK"],
+                    github: "https://github.com/randikanawarathne/cyber-ai-threat-detection",
+                    live: "#"
                 }
             ];
             
