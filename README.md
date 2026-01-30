@@ -2,11 +2,11 @@
 
 🌐 **Live Website:** https://randikanawarathne.github.io
 
-## 🚀 About This Project
+##  About This Project
 
 This is my personal portfolio website showcasing my skills, projects, and code examples. Built with modern web technologies to demonstrate my expertise in full-stack development.
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 - **Frontend:** HTML5, CSS3, JavaScript (ES6+)
 - **Code Highlighting:** Prism.js
@@ -14,16 +14,16 @@ This is my personal portfolio website showcasing my skills, projects, and code e
 - **Hosting:** GitHub Pages
 - **Form Handling:** Formspree
 
-## 📁 Project Structure
-randikanwarathne.github.io/
-├── index.html # Main HTML file
-├── style.css # Stylesheet
-├── script.js # JavaScript functionality
-├── projects.json # Projects data
-└── README.md # This file
+##  Project Structure
+randikanwarathne.github.io
+- index.html # Main HTML file
+- style.css # Stylesheet
+- script.js # JavaScript functionality
+- projects.json # Projects data
+- README.md # This file
 
 
-## 🎯 Features
+##  Features
 
 - ✅ Fully responsive design
 - ✅ Smooth scrolling navigation
@@ -33,7 +33,7 @@ randikanwarathne.github.io/
 - ✅ Mobile-friendly menu
 - ✅ Modern UI/UX design
 
-## 🔧 Setup Instructions
+##  Setup Instructions
 
 1. Clone the repository:
    
