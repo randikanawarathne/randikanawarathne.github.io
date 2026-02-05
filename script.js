@@ -1,159 +1,126 @@
-// Wait for DOM to be fully loaded
 document.addEventListener('DOMContentLoaded', function() {
-    
-    // Mobile Menu Toggle
-    const menuToggle = document.querySelector('.menu-toggle');
-    const navLinks = document.querySelector('.nav-links');
-    
-    if (menuToggle) {
-        menuToggle.addEventListener('click', function() {
-            navLinks.classList.toggle('active');
-            menuToggle.innerHTML = navLinks.classList.contains('active') 
-                ? '<i class="fas fa-times"></i>' 
-                : '<i class="fas fa-bars"></i>';
-        });
+    // Dynamic greeting based on time
+    const hour = new Date().getHours();
+    let greeting = "Welcome to my portfolio!";
+    if (hour < 12) {
+        greeting = "Good morning! Welcome to my portfolio!";
+    } else if (hour < 18) {
+        greeting = "Good afternoon! Welcome to my portfolio!";
+    } else {
+        greeting = "Good evening! Welcome to my portfolio!";
     }
-    
-    // Close mobile menu when clicking a link
-    document.querySelectorAll('.nav-links a').forEach(link => {
-        link.addEventListener('click', function() {
-            if (navLinks) {
-                navLinks.classList.remove('active');
-                if (menuToggle) {
-                    menuToggle.innerHTML = '<i class="fas fa-bars"></i>';
-                }
-            }
-        });
-    });
-    
-    // Smooth Scrolling for Navigation Links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
+    document.getElementById('greeting').textContent = greeting;
+
+    // Smooth scrolling for navigation links
+    const navLinks = document.querySelectorAll('.nav-links a');
+    navLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
             e.preventDefault();
-            
             const targetId = this.getAttribute('href');
-            if (targetId === '#') return;
-            
-            const targetElement = document.querySelector(targetId);
-            if (targetElement) {
+            const targetSection = document.querySelector(targetId);
+            if (targetSection) {
                 window.scrollTo({
-                    top: targetElement.offsetTop - 80,
+                    top: targetSection.offsetTop - 80,
                     behavior: 'smooth'
                 });
             }
         });
     });
-    
-    // Update Footer Year
-    const yearElement = document.getElementById('current-year');
-    if (yearElement) {
-        yearElement.textContent = new Date().getFullYear();
-    }
-    
-    // Load Projects Dynamically
-    async function loadProjects() {
-        try {
-            const container = document.getElementById('projects-container');
-            if (!container) return;
-            
-            // Default projects
-            const defaultProjects = [
-                {
-                    id: 1,
-                    title: "Portfolio Website",
-                    description: "Responsive portfolio website built with HTML, CSS, and JavaScript.",
-                    technologies: ["HTML5", "CSS3", "JavaScript", "Git"],
-                    github: "https://github.com/randikanawarathne/randikanawarathne.github.io",
-                    live: "https://randikanawarathne.github.io"
-                },
-                {
-                    id: 2,
-                    title: "E-commerce Platform",
-                    description: "Full-featured online store with PHP and MySQL.",
-                    technologies: ["PHP", "MySQL", "JavaScript", "Bootstrap"],
-                    github: "#",
-                    live: "#"
-                },
-                 {
-                    id: 3,
-                    title: "AI-Driven Cyber Threat Detection System",
-                    description: "Developed a production-ready threat detection system using machine learning algorithms to analyze network logs in real-time. The system achieves 97.8% detection accuracy, integrates with MITRE ATT&CK framework, and generates automated severity reports..",
-                    technologies: ["Python", "Scikit-learn", "Pandas", "Docker", "MITRE ATT&CK"],
-                    github: "https://github.com/randikanawarathne/cyber-ai-threat-detection",
-                    live: "#"
-                }
-            ];
-            
-            // Display projects
-            container.innerHTML = '';
-            
-            defaultProjects.forEach(project => {
+
+    // Active nav link highlighting
+    window.addEventListener('scroll', function() {
+        const sections = document.querySelectorAll('section');
+        const navHeight = document.getElementById('navbar').offsetHeight;
+        let current = '';
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+            if (scrollY >= (sectionTop - navHeight - 100)) {
+                current = section.getAttribute('id');
+            }
+        });
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === `#${current}`) {
+                link.classList.add('active');
+            }
+        });
+    });
+
+    // Load projects from projects.json
+    fetch('projects.json')
+        .then(response => response.json())
+        .then(data => {
+            const projectsGrid = document.getElementById('projects-grid');
+            data.projects.forEach(project => {
                 const projectCard = document.createElement('div');
                 projectCard.className = 'project-card';
                 
+                let associatedHtml = '';
+                if (project.associated_with) {
+                    associatedHtml = `<p class="project-associated"><i class="fas fa-building"></i> Associated with ${project.associated_with}</p>`;
+                }
+                
+                let dateHtml = '';
+                if (project.date) {
+                    dateHtml = `<p class="project-date"><i class="fas fa-calendar"></i> ${project.date}</p>`;
+                }
+                
                 projectCard.innerHTML = `
-                    <div class="project-image">
+                    <div class="project-header">
                         <i class="fas fa-code"></i>
                     </div>
                     <div class="project-content">
                         <h3>${project.title}</h3>
-                        <p>${project.description}</p>
-                        <div class="project-tech">
-                            ${project.technologies.map(tech => 
-                                `<span>${tech}</span>`
-                            ).join('')}
+                        ${dateHtml}
+                        ${associatedHtml}
+                        <p class="project-description">${project.description}</p>
+                        <div class="tech-tags">
+                            ${project.technologies.map(tech => `<span class="tech-tag">${tech}</span>`).join('')}
                         </div>
                         <div class="project-links">
-                            <a href="${project.github}" target="_blank" class="btn">GitHub</a>
-                            <a href="${project.live}" target="_blank" class="btn secondary">Live Demo</a>
+                            <a href="${project.github_url}" class="project-link" target="_blank"><i class="fab fa-github"></i> GitHub</a>
                         </div>
                     </div>
                 `;
-                
-                container.appendChild(projectCard);
+                projectsGrid.appendChild(projectCard);
             });
-            
-        } catch (error) {
-            console.log('Error loading projects:', error);
-        }
-    }
-    
-    // Code Tabs Functionality
-    function initCodeTabs() {
-        const tabs = document.querySelectorAll('.code-tab');
-        const examples = document.querySelectorAll('.code-example');
-        
-        tabs.forEach(tab => {
-            tab.addEventListener('click', () => {
-                // Remove active class from all tabs and examples
-                tabs.forEach(t => t.classList.remove('active'));
-                examples.forEach(e => e.classList.remove('active'));
-                
-                // Add active class to clicked tab
-                tab.classList.add('active');
-                
-                // Show corresponding example
-                const language = tab.getAttribute('data-language');
-                const targetExample = document.querySelector(`.code-example[data-language="${language}"]`);
-                
-                if (targetExample) {
-                    targetExample.classList.add('active');
-                }
-            });
+        })
+        .catch(error => console.error('Error loading projects:', error));
+
+    // Form validation
+    const contactForm = document.getElementById('contact-form');
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+            if (name.length < 2) {
+                alert('Please enter a valid name');
+                e.preventDefault();
+                return false;
+            }
+            if (!validateEmail(email)) {
+                alert('Please enter a valid email address');
+                e.preventDefault();
+                return false;
+            }
+            if (message.length < 10) {
+                alert('Message must be at least 10 characters');
+                e.preventDefault();
+                return false;
+            }
         });
     }
-    
-    // Initialize everything
-    loadProjects();
-    initCodeTabs();
-});
 
-// Navbar scroll effect
-window.addEventListener('scroll', function() {
-    const navbar = document.getElementById('navbar');
-    if (window.scrollY > 50) {
-        navbar.classList.add('scrolled');
-    } else {
-        navbar.classList.remove('scrolled');
+    function validateEmail(email) {
+        const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return re.test(email);
+    }
+
+    // Dynamic year in footer
+    const yearSpan = document.getElementById('current-year');
+    if (yearSpan) {
+        yearSpan.textContent = new Date().getFullYear();
     }
 });
