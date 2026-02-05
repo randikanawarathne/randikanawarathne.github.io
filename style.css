@@ -116,6 +116,12 @@ body {
     margin-bottom: 20px;
 }
 
+.hero-content {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
 .highlight {
     color: #3b82f6;
 }
