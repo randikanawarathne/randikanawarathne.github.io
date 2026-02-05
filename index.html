@@ -39,8 +39,36 @@
             <div class="about-content">
                 <div class="about-text">
                     <h3>My Journey</h3>
-                    <p>Passionate developer specializing in cybersecurity and AI-driven solutions...</p>
+                    <p>Passionate developer specializing in cybersecurity and AI-driven solutions</p>
                     <p class="dynamic-greeting" id="greeting">Welcome to my portfolio!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Cybersecurity</h3>
+                    <p>Threat Detection, Network Security, Penetration Testing</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-brain"></i>
+                    <h3>Machine Learning</h3>
+                    <p>Python, TensorFlow, Neural Networks, Data Analysis</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-code"></i>
+                    <h3>Web Development</h3>
+                    <p>HTML5, CSS3, JavaScript, PHP, MySQL</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-database"></i>
+                    <h3>Data Science</h3>
+                    <p>Pandas, NumPy, Matplotlib, Data Visualization</p>
                 </div>
             </div>
         </div>
@@ -51,6 +79,44 @@
             <h2 class="section-title">My Projects</h2>
             <div class="projects-grid" id="projects-grid">
                 <!-- Projects will be loaded by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <section id="code" class="code">
+        <div class="container">
+            <h2 class="section-title">Code</h2>
+            <div class="code-grid">
+                <div class="code-card">
+                    <div class="code-header">
+                        <i class="fab fa-python"></i>
+                        <span class="code-lang">Python</span>
+                    </div>
+                    <pre class="code-block"><code>def detect_threats(data):
+    # AI threat detection
+    model = load_model('threats')
+    prediction = model.predict(data)
+    return prediction</code></pre>
+                    <a href="https://github.com/randikanawarathne" target="_blank" class="code-link">
+                        <i class="fab fa-github"></i> View on GitHub
+                    </a>
+                </div>
+                <div class="code-card">
+                    <div class="code-header">
+                        <i class="fab fa-js"></i>
+                        <span class="code-lang">JavaScript</span>
+                    </div>
+                    <pre class="code-block"><code>async function fetchProjects() {
+    const response = await 
+        fetch('projects.json');
+    const data = await 
+        response.json();
+    renderProjects(data);
+}</code></pre>
+                    <a href="https://github.com/randikanawarathne" target="_blank" class="code-link">
+                        <i class="fab fa-github"></i> View on GitHub
+                    </a>
+                </div>
             </div>
         </div>
     </section>
