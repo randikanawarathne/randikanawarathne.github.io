@@ -9,10 +9,10 @@
             "date": "Feb 2026 – Feb 2026"
         },
         {
-            "title": "Data Analysis Tool",
-            "description": "Python application for processing datasets",
-            "technologies": ["Python", "Pandas", "Matplotlib"],
-            "github_url": "https://github.com/yourusername/data-analysis"
+            "title": "AI Cybersecurity Threat Detection System",
+            "description": "An AI-powered cybersecurity threat detection system that identifies and mitigates potential cyber threats in real-time. The system leverages machine learning algorithms to analyze network traffic and detect anomalies, providing enhanced security for organizations.",
+            "technologies": ["Cybersecurity", "Machine Learning", "Python", "Artificial Intelligence"],
+            "github_url": "https://github.com/randikanawarathne/cyber-ai-threat-detection"
         },
         {
             "title": "Portfolio Website",
