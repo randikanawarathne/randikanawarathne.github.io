@@ -1,36 +1,24 @@
 {
     "projects": [
         {
-            "id": 1,
+            "title": "Phishing Website Detection AI",
+            "description": "AI-based system designed to detect phishing websites using machine learning. The project analyzes URL and website features to classify malicious and legitimate sites, helping reduce phishing risks. Built with a focus on accuracy, performance, and real-world cybersecurity application.",
+            "technologies": ["Cybersecurity", "Machine Learning", "Python", "Artificial Intelligence"],
+            "github_url": "https://github.com/randikanawarathne/phishing_website_detection_ai",
+            "associated_with": "Rough X Developers",
+            "date": "Feb 2026 – Feb 2026"
+        },
+        {
+            "title": "Data Analysis Tool",
+            "description": "Python application for processing datasets",
+            "technologies": ["Python", "Pandas", "Matplotlib"],
+            "github_url": "https://github.com/yourusername/data-analysis"
+        },
+        {
             "title": "Portfolio Website",
-            "description": "Professional portfolio website showcasing IT skills and projects",
-            "technologies": ["HTML5", "CSS3", "JavaScript", "GitHub Pages"],
-            "github": "https://github.com/randikanwarathne/randikanwarathne.github.io",
-            "live": "https://randikanwarathne.github.io"
-        },
-        {
-            "id": 2,
-            "title": "Cybersecurity Tool",
-            "description": "Python-based security scanner for network vulnerabilities",
-            "technologies": ["Python", "Socket", "Security"],
-            "github": "#",
-            "live": "#"
-        },
-        {
-                    "id": 3,
-                    "title": "AI-Driven Cyber Threat Detection System",
-                    "description": "Developed a production-ready threat detection system using machine learning algorithms to analyze network logs in real-time. The system achieves 97.8% detection accuracy, integrates with MITRE ATT&CK framework, and generates automated severity reports..",
-                    "technologies": ["Python", "Scikit-learn", "Pandas", "Docker", "MITRE ATT&CK"],
-                    "github": "https://github.com/randikanawarathne/cyber-ai-threat-detection",
-                    "live": "#"
-                }
-        {
-            "id": 3,
-            "title": "AI Image Classifier",
-            "description": "Machine learning model for image classification using TensorFlow",
-            "technologies": ["Python", "TensorFlow", "AI/ML"],
-            "github": "#",
-            "live": "#"
+            "description": "Responsive personal portfolio",
+            "technologies": ["HTML5", "CSS3", "JavaScript", "PHP"],
+            "github_url": "https://github.com/yourusername/portfolio"
         }
     ]
 }
