@@ -1,0 +1,29 @@
+{
+    "projects": [
+        {
+            "title": "Phishing Website Detection AI",
+            "category": "security",
+            "description": "An ML-powered phishing detection system that evaluates URLs and page behavior to classify malicious websites with a strong focus on explainability and real-world defense scenarios.",
+            "technologies": ["Cybersecurity", "Machine Learning", "Python", "AI"],
+            "github_url": "https://github.com/randikanawarathne/phishing_website_detection_ai",
+            "associated_with": "Rough X Developers",
+            "date": "Feb 2026 - Feb 2026"
+        },
+        {
+            "title": "AI Cybersecurity Threat Detection System",
+            "category": "ai",
+            "description": "A threat detection platform that analyzes network activity in real time, flags anomalies, and supports faster incident response through AI-assisted classification.",
+            "technologies": ["Cybersecurity", "Machine Learning", "Python", "Detection"],
+            "github_url": "https://github.com/randikanawarathne/cyber-ai-threat-detection",
+            "date": "2026"
+        },
+        {
+            "title": "Modern Portfolio Website",
+            "category": "web",
+            "description": "A polished personal portfolio experience with dynamic rendering, modern UI motion, project filtering, responsive design, and a stronger visual identity.",
+            "technologies": ["HTML5", "CSS3", "JavaScript", "UI Engineering"],
+            "github_url": "https://github.com/randikanawarathne/portfolio",
+            "date": "2026"
+        }
+    ]
+}

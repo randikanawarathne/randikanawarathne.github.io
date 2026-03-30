@@ -3,154 +3,309 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Randika Nawarathne | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Modern portfolio of Randika Nawarathne, focused on cybersecurity, AI systems, and modern web experiences.">
+    <title>Randika Nawarathne | Cybersecurity & AI Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <nav id="navbar">
-        <div class="container">
-            <a href="#home" class="logo">Randika Nawarathne <span>| Portfolio</span></a>
-            <ul class="nav-links">
-                <li><a href="#home" class="active">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#code">Code</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
+<body class="theme-dark">
+    <div class="scroll-progress" id="scroll-progress"></div>
+    <canvas id="particles" aria-hidden="true"></canvas>
 
-    <section id="home" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1>Hi, I'm <span class="highlight">Randika Nawarathne</span></h1>
-                <h2>Cybersecurity | AI Developer | System Architect</h2>
-                <p>Building intelligent solutions with Machine Learning, Python, and modern web technologies</p>
-                <a href="#projects" class="btn">View My Work</a>
-            </div>
-        </div>
-    </section>
+    <header class="site-header" id="navbar">
+        <div class="container nav-shell">
+            <a href="#home" class="logo">
+                <span class="logo-mark">RN</span>
+                <span class="logo-text">Randika Nawarathne</span>
+            </a>
 
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <h3>My Journey</h3>
-                    <p>Passionate developer specializing in cybersecurity and AI-driven solutions</p>
-                    <p class="dynamic-greeting" id="greeting">Welcome to my portfolio!</p>
-                </div>
-            </div>
-        </div>
-    </section>
+            <nav class="main-nav" aria-label="Primary navigation">
+                <button class="mobile-toggle" id="mobile-toggle" type="button" aria-label="Toggle menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#code">Code</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
 
-    <section id="skills" class="skills">
-        <div class="container">
-            <h2 class="section-title">Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <i class="fas fa-shield-alt"></i>
-                    <h3>Cybersecurity</h3>
-                    <p>Threat Detection, Network Security, Penetration Testing</p>
-                </div>
-                <div class="skill-card">
-                    <i class="fas fa-brain"></i>
-                    <h3>Machine Learning</h3>
-                    <p>Python, TensorFlow, Neural Networks, Data Analysis</p>
-                </div>
-                <div class="skill-card">
-                    <i class="fas fa-code"></i>
-                    <h3>Web Development</h3>
-                    <p>HTML5, CSS3, JavaScript, PHP, MySQL</p>
-                </div>
-                <div class="skill-card">
-                    <i class="fas fa-database"></i>
-                    <h3>Data Science</h3>
-                    <p>Pandas, NumPy, Matplotlib, Data Visualization</p>
-                </div>
-            </div>
+            <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch theme">
+                <i class="fas fa-moon"></i>
+                <span>Dark Mode</span>
+            </button>
         </div>
-    </section>
+    </header>
 
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title">My Projects</h2>
-            <div class="projects-grid" id="projects-grid">
-                <!-- Projects will be loaded by JavaScript -->
-            </div>
-        </div>
-    </section>
-
-    <section id="code" class="code">
-        <div class="container">
-            <h2 class="section-title">Code</h2>
-            <div class="code-grid">
-                <div class="code-card">
-                    <div class="code-header">
-                        <i class="fab fa-python"></i>
-                        <span class="code-lang">Python</span>
+    <main>
+        <section id="home" class="hero section">
+            <div class="container hero-grid">
+                <div class="hero-copy reveal">
+                    <p class="eyebrow">Cybersecurity Engineer | AI Developer | System Architect</p>
+                    <h1>Designing secure, intelligent products that feel as sharp as they perform.</h1>
+                    <p class="hero-description">
+                        I build high-impact systems across AI, cybersecurity, and web engineering with a focus on clarity,
+                        resilience, and modern user experience.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary">Explore Projects</a>
+                        <a href="#contact" class="btn btn-secondary">Let's Build Something</a>
                     </div>
-                    <pre class="code-block"><code>def detect_threats(data):
-    # AI threat detection
-    model = load_model('threats')
-    prediction = model.predict(data)
-    return prediction</code></pre>
-                    <a href="https://github.com/randikanawarathne" target="_blank" class="code-link">
-                        <i class="fab fa-github"></i> View on GitHub
-                    </a>
-                </div>
-                <div class="code-card">
-                    <div class="code-header">
-                        <i class="fab fa-js"></i>
-                        <span class="code-lang">JavaScript</span>
+                    <div class="hero-badges">
+                        <span class="badge float"><i class="fas fa-shield-halved"></i> Security-first</span>
+                        <span class="badge float"><i class="fas fa-brain"></i> AI-driven</span>
+                        <span class="badge float"><i class="fas fa-bolt"></i> Fast execution</span>
                     </div>
-                    <pre class="code-block"><code>async function fetchProjects() {
-    const response = await 
-        fetch('projects.json');
-    const data = await 
-        response.json();
-    renderProjects(data);
-}</code></pre>
-                    <a href="https://github.com/randikanawarathne" target="_blank" class="code-link">
-                        <i class="fab fa-github"></i> View on GitHub
-                    </a>
+                </div>
+
+                <div class="hero-visual reveal">
+                    <div class="hero-card card">
+                        <div class="profile-ring">
+                            <img src="assets/profile.jpg.png" alt="Portrait of Randika Nawarathne">
+                        </div>
+                        <div class="status-pill">
+                            <span class="status-dot"></span>
+                            Available for collaborations
+                        </div>
+                        <div class="hero-metrics">
+                            <article>
+                                <strong class="counter" data-target="8">0</strong>
+                                <span>Core skill areas</span>
+                            </article>
+                            <article>
+                                <strong class="counter" data-target="3">0</strong>
+                                <span>Featured builds</span>
+                            </article>
+                            <article>
+                                <strong class="counter" data-target="100">0</strong>
+                                <span>Focus on quality</span>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="orb orb-one"></div>
+                    <div class="orb orb-two"></div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <form action="https://formspree.io/f/your-form-id" method="POST" class="contact-form" id="contact-form">
-                <div class="form-group">
-                    <label for="name">Full Name:</label>
-                    <input type="text" id="name" name="name" required>
+        <section id="about" class="section about">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <p class="section-kicker">About</p>
+                    <h2 class="section-title">Strategic builder with a security mindset</h2>
+                    <p class="section-intro" id="greeting">Welcome to my portfolio.</p>
                 </div>
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
-                </div>
-                <button type="submit" class="btn">Send Message</button>
-            </form>
-        </div>
-    </section>
 
-    <footer>
-        <div class="container">
-            <p>&copy; <span id="current-year">2025</span> Randika Nawarathne. All rights reserved.</p>
+                <div class="about-grid">
+                    <article class="about-story reveal card">
+                        <h3>What I bring</h3>
+                        <p>
+                            I enjoy turning complex ideas into usable systems, whether that means detecting threats,
+                            shipping intelligent automations, or crafting portfolio-grade interfaces with strong technical foundations.
+                        </p>
+                        <p>
+                            My work sits at the intersection of cybersecurity, machine learning, and modern JavaScript-driven experiences.
+                        </p>
+                    </article>
+
+                    <div class="about-panels">
+                        <article class="info-panel reveal card">
+                            <span class="panel-label">Current focus</span>
+                            <h3>AI-powered security products</h3>
+                            <p>Building tools that combine practical detection logic, usable UX, and dependable system design.</p>
+                        </article>
+                        <article class="info-panel reveal card">
+                            <span class="panel-label">Working style</span>
+                            <h3>Clear architecture, modern execution</h3>
+                            <p>From backend logic to frontend polish, I aim for systems that are robust, readable, and impressive.</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section skills">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <p class="section-kicker">Capabilities</p>
+                    <h2 class="section-title">Tools I use to ship secure and smart systems</h2>
+                </div>
+
+                <div class="skills-grid">
+                    <article class="skill-card card reveal">
+                        <div class="skill-icon"><i class="fas fa-shield-alt"></i></div>
+                        <h3>Cybersecurity</h3>
+                        <p>Threat detection, phishing analysis, penetration testing, and secure application thinking.</p>
+                        <div class="skill-meter" data-level="92">
+                            <span class="skill-meter-fill"></span>
+                        </div>
+                    </article>
+                    <article class="skill-card card reveal">
+                        <div class="skill-icon"><i class="fas fa-brain"></i></div>
+                        <h3>Machine Learning</h3>
+                        <p>Model building, classification pipelines, prediction systems, and practical AI deployment.</p>
+                        <div class="skill-meter" data-level="88">
+                            <span class="skill-meter-fill"></span>
+                        </div>
+                    </article>
+                    <article class="skill-card card reveal">
+                        <div class="skill-icon"><i class="fas fa-code"></i></div>
+                        <h3>JavaScript Experiences</h3>
+                        <p>Interactive interfaces, dynamic rendering, animation systems, and smooth user journeys.</p>
+                        <div class="skill-meter" data-level="84">
+                            <span class="skill-meter-fill"></span>
+                        </div>
+                    </article>
+                    <article class="skill-card card reveal">
+                        <div class="skill-icon"><i class="fas fa-database"></i></div>
+                        <h3>Data Engineering</h3>
+                        <p>Structured analysis, Python workflows, visual insights, and reliable information handling.</p>
+                        <div class="skill-meter" data-level="81">
+                            <span class="skill-meter-fill"></span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section projects">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <p class="section-kicker">Projects</p>
+                    <h2 class="section-title">Selected work with live filtering and search</h2>
+                    <p class="section-intro">Explore projects by area and quickly search through the stack or problem space.</p>
+                </div>
+
+                <div class="projects-toolbar reveal">
+                    <div class="filter-group" id="filter-group">
+                        <button class="filter-btn active" data-filter="all" type="button">All</button>
+                    </div>
+                    <label class="search-shell" for="project-search">
+                        <i class="fas fa-search"></i>
+                        <input type="search" id="project-search" placeholder="Search projects, technologies, or categories">
+                    </label>
+                </div>
+
+                <div class="projects-grid" id="projects-grid"></div>
+                <p class="empty-state hidden" id="empty-state">No projects match that filter right now.</p>
+            </div>
+        </section>
+
+        <section id="code" class="section code">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <p class="section-kicker">Code</p>
+                    <h2 class="section-title">Clean snippets, practical logic</h2>
+                </div>
+
+                <div class="code-grid">
+                    <article class="code-card reveal card">
+                        <div class="code-header">
+                            <div>
+                                <span class="code-lang"><i class="fab fa-python"></i> Python</span>
+                                <p>Threat analysis workflow</p>
+                            </div>
+                            <button class="copy-btn" type="button" data-copy-target="code-python">Copy</button>
+                        </div>
+                        <pre class="code-block" id="code-python"><code>def detect_threats(payload):
+    engineered = prepare_features(payload)
+    score = model.predict_proba([engineered])[0][1]
+    verdict = "malicious" if score >= 0.8 else "review"
+    return {"score": round(score, 3), "verdict": verdict}</code></pre>
+                        <a href="https://github.com/randikanawarathne" target="_blank" rel="noreferrer" class="code-link">
+                            <i class="fab fa-github"></i> View GitHub Profile
+                        </a>
+                    </article>
+
+                    <article class="code-card reveal card">
+                        <div class="code-header">
+                            <div>
+                                <span class="code-lang"><i class="fab fa-js"></i> JavaScript</span>
+                                <p>Modern portfolio rendering</p>
+                            </div>
+                            <button class="copy-btn" type="button" data-copy-target="code-js">Copy</button>
+                        </div>
+                        <pre class="code-block" id="code-js"><code>const visibleProjects = data.projects.filter(project =&gt; {
+  const inCategory = activeFilter === 'all' || project.category === activeFilter;
+  const searchable = `${project.title} ${project.technologies.join(' ')}`.toLowerCase();
+  return inCategory &amp;&amp; searchable.includes(searchTerm);
+});</code></pre>
+                        <a href="https://github.com/randikanawarathne" target="_blank" rel="noreferrer" class="code-link">
+                            <i class="fab fa-github"></i> Browse More Code
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact">
+            <div class="container contact-grid">
+                <div class="contact-copy reveal">
+                    <p class="section-kicker">Contact</p>
+                    <h2 class="section-title">Let's create something impressive</h2>
+                    <p class="section-intro">
+                        Open to collaborations in cybersecurity, AI systems, automation, and premium web experiences.
+                    </p>
+                    <div class="contact-cards">
+                        <a class="contact-card card" href="https://github.com/randikanawarathne" target="_blank" rel="noreferrer">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                        <a class="contact-card card" href="https://linkedin.com/in/randikanawarathne" target="_blank" rel="noreferrer">
+                            <i class="fab fa-linkedin"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                        <button class="contact-card card" id="copy-email" type="button" data-email="randika@example.com">
+                            <i class="fas fa-envelope"></i>
+                            <span>Copy Email</span>
+                        </button>
+                    </div>
+                </div>
+
+                <form action="https://formspree.io/f/your-form-id" method="POST" class="contact-form reveal card" id="contact-form" novalidate>
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your name" required>
+                        <small class="field-error"></small>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                        <small class="field-error"></small>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Project Brief</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Tell me about your project or idea..." required></textarea>
+                        <small class="field-error"></small>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-shell">
+            <p>&copy; <span id="current-year">2026</span> Randika Nawarathne. Crafted with modern JavaScript and thoughtful design.</p>
             <div class="social-links">
-                <a href="https://linkedin.com/in/randikanawarathne"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/randikanawarathne"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/randikanawarathne" target="_blank" rel="noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/randikanawarathne" target="_blank" rel="noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
             </div>
         </div>
     </footer>
+
+    <button class="back-to-top" id="back-to-top" type="button" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    <div class="toast" id="toast" aria-live="polite"></div>
 
     <script src="script.js"></script>
 </body>
