@@ -1,28 +1,28 @@
 {
     "projects": [
         {
-            "title": "Phishing Website Detection AI",
-            "category": "security",
-            "description": "An ML-powered phishing detection system that evaluates URLs and page behavior to classify malicious websites with a strong focus on explainability and real-world defense scenarios.",
-            "technologies": ["Cybersecurity", "Machine Learning", "Python", "AI"],
+            "title": "Phishing Detection AI Model & FastAPI Microservice",
+            "category": "ai",
+            "description": "An end-to-end ML production pipeline achieving 96.4% F1-score and sub-35ms inference latency. Features automated feature extraction, MLOps tracking, and a Dockerized FastAPI REST endpoint.",
+            "technologies": ["PyTorch", "FastAPI", "Docker", "MLOps", "Scikit-Learn"],
             "github_url": "https://github.com/randikanawarathne/phishing_website_detection_ai",
             "associated_with": "Rough X Developers",
-            "date": "Feb 2026 - Feb 2026"
+            "date": "Feb 2026"
         },
         {
-            "title": "AI Cybersecurity Threat Detection System",
+            "title": "Real-Time Anomaly Detection & Stream Processing",
             "category": "ai",
-            "description": "A threat detection platform that analyzes network activity in real time, flags anomalies, and supports faster incident response through AI-assisted classification.",
-            "technologies": ["Cybersecurity", "Machine Learning", "Python", "Detection"],
+            "description": "An intelligent stream processing platform with 99.1% detection accuracy. Analyzes high-throughput data in real time with automated alert triggers, model drift tracking, and PyTorch inference.",
+            "technologies": ["PyTorch", "MLOps", "FastAPI", "Python", "Docker"],
             "github_url": "https://github.com/randikanawarathne/cyber-ai-threat-detection",
             "date": "2026"
         },
         {
-            "title": "Modern Portfolio Website",
-            "category": "web",
-            "description": "A polished personal portfolio experience with dynamic rendering, modern UI motion, project filtering, responsive design, and a stronger visual identity.",
-            "technologies": ["HTML5", "CSS3", "JavaScript", "UI Engineering"],
-            "github_url": "https://github.com/randikanawarathne/portfolio",
+            "title": "RAG Knowledge Retrieval & Vector Search Engine",
+            "category": "ai",
+            "description": "A Retrieval-Augmented Generation (RAG) system utilizing ChromaDB vector embeddings and Hugging Face Transformers, delivering sub-50ms context retrieval for semantic Q&A.",
+            "technologies": ["GenAI", "LangChain", "Vector DB", "PyTorch", "FastAPI"],
+            "github_url": "https://github.com/randikanawarathne",
             "date": "2026"
         }
     ]

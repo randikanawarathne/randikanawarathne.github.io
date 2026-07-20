@@ -20,8 +20,8 @@ document.addEventListener('DOMContentLoaded', () => {
     let searchTerm = '';
 
     const iconMap = {
-        security: 'fas fa-shield-halved',
         ai: 'fas fa-brain',
+        ml: 'fas fa-robot',
         web: 'fas fa-laptop-code',
         automation: 'fas fa-gears',
         data: 'fas fa-chart-line'

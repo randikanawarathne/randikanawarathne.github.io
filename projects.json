@@ -1,24 +1,24 @@
 {
     "projects": [
         {
-            "title": "Phishing Website Detection AI",
-            "description": "AI-based system designed to detect phishing websites using machine learning. The project analyzes URL and website features to classify malicious and legitimate sites, helping reduce phishing risks. Built with a focus on accuracy, performance, and real-world cybersecurity application.",
-            "technologies": ["Cybersecurity", "Machine Learning", "Python", "Artificial Intelligence"],
+            "title": "Phishing Detection AI Model & FastAPI Microservice",
+            "description": "An end-to-end ML production pipeline achieving 96.4% F1-score and sub-35ms inference latency. Features automated feature extraction, MLOps tracking, and a Dockerized FastAPI REST endpoint.",
+            "technologies": ["PyTorch", "FastAPI", "Docker", "MLOps", "Scikit-Learn"],
             "github_url": "https://github.com/randikanawarathne/phishing_website_detection_ai",
             "associated_with": "Rough X Developers",
-            "date": "Feb 2026 – Feb 2026"
+            "date": "Feb 2026"
         },
         {
-            "title": "AI Cybersecurity Threat Detection System",
-            "description": "An AI-powered cybersecurity threat detection system that identifies and mitigates potential cyber threats in real-time. The system leverages machine learning algorithms to analyze network traffic and detect anomalies, providing enhanced security for organizations.",
-            "technologies": ["Cybersecurity", "Machine Learning", "Python", "Artificial Intelligence"],
+            "title": "Real-Time Anomaly Detection & Stream Processing",
+            "description": "An intelligent stream processing platform with 99.1% detection accuracy. Analyzes high-throughput data in real time with automated alert triggers, model drift tracking, and PyTorch inference.",
+            "technologies": ["PyTorch", "MLOps", "FastAPI", "Python", "Docker"],
             "github_url": "https://github.com/randikanawarathne/cyber-ai-threat-detection"
         },
         {
-            "title": "Portfolio Website",
-            "description": "Responsive personal portfolio",
-            "technologies": ["HTML5", "CSS3", "JavaScript", "PHP"],
-            "github_url": "https://github.com/randikanawarathne/portfolio"
+            "title": "RAG Knowledge Retrieval & Vector Search Engine",
+            "description": "A Retrieval-Augmented Generation (RAG) system utilizing ChromaDB vector embeddings and Hugging Face Transformers, delivering sub-50ms context retrieval for semantic Q&A.",
+            "technologies": ["GenAI", "LangChain", "Vector DB", "PyTorch", "FastAPI"],
+            "github_url": "https://github.com/randikanawarathne"
         }
     ]
 }
