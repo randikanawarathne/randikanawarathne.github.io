@@ -5,7 +5,6 @@
             "description": "An end-to-end ML production pipeline achieving 96.4% F1-score and sub-35ms inference latency. Features automated feature extraction, MLOps tracking, and a Dockerized FastAPI REST endpoint.",
             "technologies": ["PyTorch", "FastAPI", "Docker", "MLOps", "Scikit-Learn"],
             "github_url": "https://github.com/randikanawarathne/phishing_website_detection_ai",
-            "associated_with": "Rough X Developers",
             "date": "Feb 2026"
         },
         {
