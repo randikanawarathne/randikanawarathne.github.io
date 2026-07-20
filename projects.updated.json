@@ -23,6 +23,26 @@
             "technologies": ["GenAI", "LangChain", "Vector DB", "PyTorch", "FastAPI"],
             "github_url": "https://github.com/randikanawarathne",
             "date": "2026"
+        },
+        {
+            "title": "Malwaththa Motors ERP & Web Platform",
+            "category": "web",
+            "description": "Full-scale Enterprise Resource Planning (ERP) system and official web platform for Malwaththa Motors. Handles vehicle inventory, sales transactions, customer management, and automated invoicing.",
+            "technologies": ["Web ERP", "JavaScript", "SQL", "HTML5/CSS3", "REST API"],
+            "github_url": "https://github.com/randikanawarathne",
+            "live_url": "https://malwaththamotors.com",
+            "associated_with": "Freelance",
+            "date": "2025 - 2026"
+        },
+        {
+            "title": "Fit Auto Parts ERP & Web System",
+            "category": "web",
+            "description": "Custom ERP system and e-commerce web application for Fit Auto Parts. Manages automotive spare parts catalog, stock inventory, order processing, and employee management workflows.",
+            "technologies": ["Web ERP", "E-Commerce", "JavaScript", "SQL", "REST API"],
+            "github_url": "https://github.com/randikanawarathne",
+            "live_url": "https://fitautopart.com",
+            "associated_with": "Freelance",
+            "date": "2025 - 2026"
         }
     ]
 }
