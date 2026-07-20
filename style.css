@@ -278,7 +278,7 @@ body.theme-light .site-header {
 }
 
 .hero {
-    padding-top: 152px;
+    padding-top: 172px;
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -372,6 +372,7 @@ body.theme-light .site-header {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center 15%;
     border-radius: 50%;
     border: 6px solid rgba(6, 12, 23, 0.35);
 }
