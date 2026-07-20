@@ -977,7 +977,42 @@ body.theme-light .site-header {
     margin-bottom: 8px;
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 10px;
+}
+
+.company-logo,
+.card-logo,
+.badge-logo {
+    object-fit: contain;
+    background: #ffffff;
+    border-radius: 6px;
+    padding: 2px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    flex-shrink: 0;
+    display: inline-block;
+}
+
+.company-logo {
+    width: 26px;
+    height: 26px;
+}
+
+.card-logo {
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+}
+
+.badge-logo {
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+}
+
+.panel-title-with-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
 }
 
 .experience-header {
