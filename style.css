@@ -1115,3 +1115,54 @@ body.theme-light .site-header {
         text-align: center;
     }
 }
+
+/* Accessibility Focus States */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+}
+
+/* Clean Print Styles for Resume / PDF Export */
+@media print {
+    body {
+        background: #ffffff !important;
+        color: #0f172a !important;
+    }
+
+    .site-header,
+    .scroll-progress,
+    .back-to-top,
+    .toast,
+    .theme-toggle,
+    .projects-toolbar,
+    .contact-form,
+    .hero-actions {
+        display: none !important;
+    }
+
+    .section {
+        padding: 32px 0 !important;
+    }
+
+    .card {
+        border: 1px solid #cbd5e1 !important;
+        box-shadow: none !important;
+        background: #ffffff !important;
+        color: #0f172a !important;
+    }
+
+    .section-title,
+    .hero-copy h1,
+    h2, h3 {
+        color: #0f172a !important;
+    }
+
+    .text-muted,
+    p, span {
+        color: #334155 !important;
+    }
+}
+
