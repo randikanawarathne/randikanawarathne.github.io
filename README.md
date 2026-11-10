@@ -1,83 +1,71 @@
-# Randika Nawarathne - Portfolio
+# Randika Nawarathne — Portfolio
 
-🌐 **Live Website:** https://randikanawarathne.github.io
+🌐 **Live Website:** [https://randikanawarathne.github.io](https://randikanawarathne.github.io)
 
-##  About This Project
+Personal engineering portfolio showcasing commercial web platforms, Enterprise Resource Planning (ERP) systems, and full-stack software engineering capabilities built with **React, Vite, Node.js, Express, and PostgreSQL**.
 
-This is my personal portfolio website showcasing my skills, projects, and code examples. Built with modern web technologies to demonstrate my expertise in full-stack development.
+---
 
-## Technologies Used
+## 🛠️ About & Stack
 
-- **Frontend:** HTML5, CSS3, JavaScript (ES6+)
-- **Code Highlighting:** Prism.js
-- **Icons:** Font Awesome
-- **Hosting:** GitHub Pages
-- **Form Handling:** Formspree
+- **Role:** Full-Stack Software Engineer & Systems Developer
+- **Education:** Undergraduate at Sri Lanka Institute of Information Technology (SLIIT)
+- **Consulting:** Former Remote Associate IT Consultant at Nexora Labs (London, UK)
+- **Primary Stack:** **PERN Stack** (PostgreSQL, Express, React, Node.js) + **Vite**
+- **Frontend:** React 18+, Vite, Modern JavaScript (ES6+), HTML5, CSS3, Responsive Design
+- **Backend:** Node.js, Express, RESTful APIs, Middleware, Invoicing Engines
+- **Database:** PostgreSQL, Relational Schema Modeling, Query Optimization, Transactional Integrity
+- **Hosting & CI/CD:** GitHub Pages, Production Cloud Hosting, DNS/SSL Management
+- **Contact Integration:** Formspree AJAX submission
 
-##  Project Structure
-randikanwarathne.github.io
-- index.html # Main HTML file
-- style.css # Stylesheet
-- script.js # JavaScript functionality
-- projects.json # Projects data
-- README.md # This file
+---
 
+## 🚀 Featured Commercial Systems
 
-##  Features
+- **Malwaththa Motors ERP & Web Platform** (`https://malwaththamotors.com`)  
+  *Stack: React, Vite, Node.js, Express, PostgreSQL*  
+  Automates dealership vehicle inventory, client records, sales pipelines, and PDF invoicing.
 
-- ✅ Fully responsive design
-- ✅ Smooth scrolling navigation
-- ✅ Dynamic project loading
-- ✅ Code syntax highlighting
-- ✅ Interactive contact form
-- ✅ Mobile-friendly menu
-- ✅ Modern UI/UX design
+- **Fit Auto Parts ERP & Inventory System** (`https://fitautopart.com`)  
+  *Stack: React, Vite, Node.js, Express, PostgreSQL*  
+  Stock management, automotive spare parts cataloging, SKU categorization, and order workflows.
 
-##  Setup Instructions
+- **Lunexflow Solutions Platform** (`https://lunexflow.com`)  
+  *Stack: React, Vite, Node.js, Express, PostgreSQL*  
+  Business workflow automation and digital software solutions presentation platform.
 
-1. Clone the repository:
-   
-   git clone https://github.com/randikanwarathne/randikanwarathne.github.io.git
+- **Highland Rovers Travel Platform** (`https://highlandrovers.online`)  
+  *Stack: React, Vite, Node.js, Express, PostgreSQL*  
+  Expedition and fleet booking web platform with dynamic tour itineraries and inquiry handling.
 
-2. Open index.html in your browser
+- **Humanity Lanka Community Platform** (`https://humanitylanka.com`)  
+  *Stack: React, Vite, Node.js, Express, PostgreSQL*  
+  Digital presence for non-profit and community outreach operations.
 
-3. For development, use a local server or live server extension
+---
 
-📞 Contact
-Email: randika@example.com
+## 📂 Project Structure
 
-LinkedIn: https://linkedin.com/in/randikanawarathne
+```text
+randikanawarathne.github.io/
+├── index.html       # Semantic HTML5 single-page structure
+├── style.css        # Clean custom stylesheet (dark/light themes, no slop)
+├── script.js        # Dynamic project rendering, filtering, AJAX contact handling
+├── projects.json    # Structured data source for production projects
+├── assets/          # Professional photos, company logos, CV PDF
+└── README.md        # Project documentation
+```
 
-GitHub: https://github.com/randikanawarathne
+---
 
-📄 License
-This project is open source and available under the MIT License.
+## 📬 Contact & Links
 
+- **Email:** [randikasl1234@gmail.com](mailto:randikasl1234@gmail.com)
+- **LinkedIn:** [linkedin.com/in/randikanawarathne](https://linkedin.com/in/randikanawarathne)
+- **GitHub:** [github.com/randikanawarathne](https://github.com/randikanawarathne)
 
-## **STEP 3: Upload Files to GitHub**
+---
 
-### **Using GitHub Desktop:**
+## 📄 License
 
-1. Open **GitHub Desktop**
-2. You should see your changes listed
-3. Add a summary: "Add portfolio website files"
-4. Click **"Commit to main"**
-5. Click **"Push origin"** (top right)
-
-### **Using Command Line:**
-
-
-# Navigate to your project folder
-cd randikanwarathne.github.io
-
-# Check status (you should see new files)
-git status
-
-# Add all files
-git add .
-
-# Commit changes
-git commit -m "Add portfolio website files"
-
-# Push to GitHub
-git push origin main
+This repository is open source and available under the [MIT License](LICENSE).

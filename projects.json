@@ -1,43 +1,64 @@
 {
     "projects": [
         {
-            "title": "Phishing Detection AI Model & FastAPI Microservice",
-            "description": "An end-to-end ML production pipeline achieving 96.4% F1-score and sub-35ms inference latency. Features automated feature extraction, MLOps tracking, and a Dockerized FastAPI REST endpoint.",
-            "technologies": ["PyTorch", "FastAPI", "Docker", "MLOps", "Scikit-Learn"],
-            "github_url": "https://github.com/randikanawarathne/phishing_website_detection_ai",
-            "date": "Feb 2026"
-        },
-        {
-            "title": "Real-Time Anomaly Detection & Stream Processing",
-            "description": "An intelligent stream processing platform with 99.1% detection accuracy. Analyzes high-throughput data in real time with automated alert triggers, model drift tracking, and PyTorch inference.",
-            "technologies": ["PyTorch", "MLOps", "FastAPI", "Python", "Docker"],
-            "github_url": "https://github.com/randikanawarathne/cyber-ai-threat-detection",
-            "date": "2026"
-        },
-        {
-            "title": "RAG Knowledge Retrieval & Vector Search Engine",
-            "description": "A Retrieval-Augmented Generation (RAG) system utilizing ChromaDB vector embeddings and Hugging Face Transformers, delivering sub-50ms context retrieval for semantic Q&A.",
-            "technologies": ["GenAI", "LangChain", "Vector DB", "PyTorch", "FastAPI"],
-            "github_url": "https://github.com/randikanawarathne",
-            "date": "2026"
-        },
-        {
+            "id": "malwaththa-motors-erp",
             "title": "Malwaththa Motors ERP & Web Platform",
-            "description": "Full-scale Enterprise Resource Planning (ERP) system and official web platform for Malwaththa Motors. Handles vehicle inventory, sales transactions, customer management, and automated invoicing.",
-            "technologies": ["Web ERP", "JavaScript", "SQL", "HTML5/CSS3", "REST API"],
+            "category": "erp",
+            "description": "Full-scale Enterprise Resource Planning (ERP) system and commercial web platform for Malwaththa Motors. Automates vehicle inventory management, sales pipelines, client records, and transaction invoicing.",
+            "technologies": ["React", "Vite", "Node.js", "Express", "PostgreSQL", "ERP Architecture"],
             "github_url": "https://github.com/randikanawarathne",
             "live_url": "https://malwaththamotors.com",
-            "associated_with": "Freelance",
-            "date": "2025 - 2026"
+            "associated_with": "Commercial Production",
+            "date": "2025 - 2026",
+            "badge": "Commercial ERP"
         },
         {
-            "title": "Fit Auto Parts ERP & Web System",
-            "description": "Custom ERP system and e-commerce web application for Fit Auto Parts. Manages automotive spare parts catalog, stock inventory, order processing, and employee management workflows.",
-            "technologies": ["Web ERP", "E-Commerce", "JavaScript", "SQL", "REST API"],
+            "id": "fit-auto-parts-erp",
+            "title": "Fit Auto Parts ERP & Inventory System",
+            "category": "erp",
+            "description": "Complete enterprise management and catalog platform for an automotive spare parts distributor. Handles extensive stock inventory, SKU categorization, order processing workflows, and administrative dashboards.",
+            "technologies": ["React", "Vite", "Node.js", "Express", "PostgreSQL", "Inventory Systems"],
             "github_url": "https://github.com/randikanawarathne",
             "live_url": "https://fitautopart.com",
-            "associated_with": "Freelance",
-            "date": "2025 - 2026"
+            "associated_with": "Commercial Production",
+            "date": "2025 - 2026",
+            "badge": "Commercial ERP"
+        },
+        {
+            "id": "lunexflow",
+            "title": "Lunexflow — Business Workflow & Digital Solutions",
+            "category": "systems",
+            "description": "Modern software and digital solutions web platform engineered for workflow automation and modern digital services. Built with high-performance React frontends, robust Express endpoints, and PostgreSQL data persistence.",
+            "technologies": ["React", "Vite", "Node.js", "Express", "PostgreSQL", "Workflow Automation"],
+            "github_url": "https://github.com/randikanawarathne",
+            "live_url": "https://lunexflow.com",
+            "associated_with": "Production System",
+            "date": "2026",
+            "badge": "Production Web"
+        },
+        {
+            "id": "highland-rovers",
+            "title": "Highland Rovers — Expedition & Travel Platform",
+            "category": "web",
+            "description": "Online presence and fleet booking platform for Highland Rovers travel expeditions. Features dynamic fleet showcases, custom tour packages, interactive booking inquiry workflows, and responsive UI.",
+            "technologies": ["React", "Vite", "Node.js", "Express", "PostgreSQL", "Booking Engine"],
+            "github_url": "https://github.com/randikanawarathne",
+            "live_url": "https://highlandrovers.online",
+            "associated_with": "Client Production",
+            "date": "2025 - 2026",
+            "badge": "Travel Platform"
+        },
+        {
+            "id": "humanity-lanka",
+            "title": "Humanity Lanka — Community & Non-Profit Platform",
+            "category": "web",
+            "description": "Official digital web platform built for community outreach, initiatives showcase, and volunteer/donor engagement. Designed with accessible layouts, mobile responsiveness, and clean PostgreSQL-backed data architecture.",
+            "technologies": ["React", "Vite", "Node.js", "Express", "PostgreSQL", "Community Platform"],
+            "github_url": "https://github.com/randikanawarathne",
+            "live_url": "https://humanitylanka.com",
+            "associated_with": "Non-Profit Production",
+            "date": "2025 - 2026",
+            "badge": "Community Web"
         }
     ]
 }
