@@ -1,0 +1,7 @@
+# Dependencies & Skills
+node_modules/
+skills/
+.env
+.DS_Store
+Thumbs.db
+*.log
