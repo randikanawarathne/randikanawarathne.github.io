@@ -224,9 +224,12 @@ document.addEventListener('DOMContentLoaded', () => {
             ? `<a href="${project.live_url}" class="project-link primary" target="_blank" rel="noreferrer"><i class="fas fa-arrow-up-right-from-square"></i> Live System</a>`
             : '';
 
-        const githubLink = project.github_url
+        const isRootProfile = !project.github_url || project.github_url.replace(/\/+$/, '') === 'https://github.com/randikanawarathne';
+
+        const githubLink = !isRootProfile
             ? `<a href="${project.github_url}" class="project-link" target="_blank" rel="noreferrer"><i class="fab fa-github"></i> Repository</a>`
-            : '';
+            : `<span class="project-link-muted" title="Commercial Client Production — Private Codebase"><i class="fas fa-lock"></i> Client Production</span>`;
+
 
         const badgeText = project.badge || (project.category ? project.category.toUpperCase() : 'PRODUCTION');
 
